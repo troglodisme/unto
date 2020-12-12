@@ -11,14 +11,26 @@
   <meta name="description" content="Unto - EVOO">
   <meta name="keywords" content="Unto, EVOO, Italian, Olive Oil">
   <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
-  <!-- <link rel="shortcut icon" type="image/png" href="favicon.ico"> -->
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico">
 </head>
 
 
 <body>
-  <div class="video-background">
-    <iframe src="https://www.youtube.com/embed/C9f64XG-hVw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"frameborder="0" allowfullscreen></iframe>
-  </div>
+  <video playsinline autoplay muted loop poster="unto.jpg" id="bgvid">
+    <!-- <source src="unto.webm" type="video/webm"> -->
+    <source src="unto.mov" type="video/mp4">
+  </video>
+
+  <header class="viewport-header">
+    <h1>
+      Unto EVOO
+      <!-- <span>Extra Virgin Olive Oil</span> -->
+    </h1>
+  </header>
+
+  <!-- <main>
+    [[[https://codepen.io/chriscoyier/pen/VbqzER]]]
+  </main> -->
 </body>
