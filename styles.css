@@ -1,10 +1,12 @@
-@font-face {
+/* @font-face {
   font-family: 'Avara';
   src: url('fonts/Avara-Bold.woff2') format('woff2'),
        url('fonts/Avara-Bold.woff') format('woff'),
        url('fonts/Avara-Bold.eot') format('eot'),
        url('fonts/Avara-Bold.ttf') format('ttf'),
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
 
 video {
   object-fit: cover;
@@ -21,9 +23,25 @@ html, body {
 
 
 body {
-  font-family: 'Avara', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size:300px;
   margin: 0;
+}
+
+h1 {
+  color: #111111;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight:500;
+  color: #fafafa;
+  font-size: 3vw;
 }
 
 .viewport-header {
@@ -31,35 +49,17 @@ body {
   height: 100vh;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-h1 {
-  font-family: 'Avara', sans-serif;
-  color: #111111;
-  text-transform: uppercase;
-  letter-spacing: 3vw;
-  line-height: 1.2;
-  font-size: 3vw;
-  text-align: center;
-  /* span {
-    display: block;
-    font-size: 10vw;
-    letter-spacing: -1.3vw;
-  } */
+.info {
+  margin-top: 24px;
 }
 
-main {
-  display: none;
-  width: 80vw;
-  left: 10%;
-  height: 40vh;
-  overflow: auto;
-  background: rgba(black, 0.66);
-  color: white;
-  position: relative;
-  padding: 1rem;
+.logo {
+  width: 22%;
 }
 
 
@@ -67,4 +67,11 @@ main {
     #bgvid {
         display: none;
     }
+
+  body {
+    background-image: url("unto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
