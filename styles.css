@@ -56,17 +56,10 @@
    }
 }
 
-/**
- *  Reset body margin so the videowrapper can
- *  be full-width and not cause scrollbars.
- */
-/* body {
-  margin: 0;
-} */
 
 
 
-/* html, body {
+html, body {
   height: 100%;
 }
 
@@ -77,22 +70,23 @@ body {
   margin: 0;
 }
 
-h1 {
-  color: #111111;
-  text-transform: uppercase;
-  letter-spacing: 3vw;
-  line-height: 1.2;
-  font-size: 3vw;
+.header {
+  position: relative;
+  height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 
 h2 {
   font-family: 'Work Sans', sans-serif;
   font-weight:500;
   color: #fafafa;
-  font-size: 3vw;
+  font-size: 2vw;
 }
-
 
 
 .info {
@@ -105,14 +99,12 @@ h2 {
 
 
 @media screen and (max-width: 650px) {
-    #bgvid {
-        display: none;
-    }
 
-  body {
-    background-image: url("unto.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight:500;
+    color: #fafafa;
+    font-size: 3vw;
   }
-} */
+
+}
