@@ -1,12 +1,6 @@
-/* @font-face {
-  font-family: 'Avara';
-  src: url('fonts/Avara-Bold.woff2') format('woff2'),
-       url('fonts/Avara-Bold.woff') format('woff'),
-       url('fonts/Avara-Bold.eot') format('eot'),
-       url('fonts/Avara-Bold.ttf') format('ttf'),
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
 
 .video-background {
   background: #000;
@@ -49,14 +43,7 @@
    right: 50px;
    bottom: 50px;
 
-   h1 {
-      font-family: 'Roboto Slab', serif;
-      margin: 0;
-      color: #ffffff;
-   }
 }
-
-
 
 
 html, body {
@@ -65,43 +52,82 @@ html, body {
 
 
 body {
-  font-family: 'Work Sans', sans-serif;
-  font-size:300px;
+  font-family: 'monotype-grotesque', sans-serif;
   margin: 0;
+  /* background-color:green; */
+}
+
+h1 {
+  font-family: 'monotype-grotesque', sans-serif;
+  color: #fafafa;
+  font-size: 1.6vw;
+
 }
 
 .header {
-  position: relative;
-  height: 100vh;
+  padding-top: 24px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-
-h2 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight:500;
-  color: #FF6C2F;
-  font-size: 2vw;
-}
-
-
-.info {
+.header .info {
   margin-top: 24px;
 }
 
-.logo {
-  width: 22%;
+.header .logo {
+  width: 50%;
+}
+
+.launch {
+  padding-top:140px;
+  text-align: center;
+}
+
+.launch .button {
+  background-color: #467058;
+  /* background-color: #FF6D2D; */
+  color:#fafafa;
+  border-radius: 8px;
+  padding:16px 32px 16px 32px;
+  display: inline-block;
+}
+
+
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.launch .button h2 {
+  font-family: 'monotype-grotesque', sans-serif;
+  color: #fafafa;
+  font-size: 1.6vw;
+}
+
+
+
+ .footer {
+   position: fixed;
+   bottom:0;
+}
+
+  .footer .statement {
+    /* background-color:red; */
+    padding: 32px;
+
+  }
+
+.footer .statement p {
+  font-family: 'monotype-grotesque', sans-serif;
+  text-align:center;
+  color: #fafafa;
+  font-size: 1.5vw;
 }
 
 
 @media screen and (max-width: 650px) {
 
-  h2 {
-    font-family: 'Work Sans', sans-serif;
+  h1 {
+    font-family: 'monotype-grotesque', sans-serif;
     font-weight:500;
     color: #fafafa;
     font-size: 3vw;
