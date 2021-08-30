@@ -58,9 +58,9 @@ body {
 
 h1 {
   font-family: 'monotype-grotesque',sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 h2 {
@@ -127,12 +127,13 @@ font-size: 1.6vw;
 
 
 @media screen and (min-width: 0px) and (max-width: 1024px) {
-  #video { display: none; }
+  /* #video { display: none; }
 
-  /* .bg{
+  .bg{
     margin:48px;
-  } */
-  /* #photo { display: block; } */
+  }
+
+ #photo { display: block; } */
 }
 
 /* @media screen and (min-width: 1024px) {
