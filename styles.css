@@ -51,9 +51,9 @@ body {
   color: #fafafa;
   margin: 24px;
   background-color: #fafafa;
+  overflow: hidden; /* Hide scrollbars */
+
 }
-
-
 
 
 h1 {
@@ -77,12 +77,12 @@ h2 {
   text-align: center;
 }
 
-.header .info {
+.info {
   margin-top: 24px;
 }
 
-.header .logo {
-  width: 50%;
+.logo {
+  width: 50vw;
 }
 
 .launch {
@@ -122,11 +122,40 @@ font-size: 1.6vw;
 
 .statement h2{
   text-align:center;
+
 }
 
 
 
 @media screen and (min-width: 0px) and (max-width: 1024px) {
+
+  .header {
+    padding-top: 24px;
+    text-align: center;
+  }
+
+  .header .info {
+    margin-top: 24px;
+  }
+
+  .header .info h1{
+    font-size: 4vw;
+
+  }
+
+  .header .logo {
+    width: 90vw;
+  }
+
+  .statement {
+    padding: 24px;
+
+  }
+
+  .statement h2{
+    text-align:center;
+    font-size: 2.5vw;
+  }
   /* #video { display: none; }
 
   .bg{
