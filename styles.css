@@ -180,7 +180,8 @@ footer img{
 @media screen and (max-width: 768px) {
 
   h2 {
-    font-size: 20px;
+    font-size: 16px;
+    line-height:1;
   }
 
   .header {
@@ -190,20 +191,17 @@ footer img{
     text-align: center;
   }
 
-
+  section.statement{
+  padding:16px 0px;
 }
 
-
+}
 
 
 @media screen and (max-width: 470px) {
   .video{
     width: 380%;
     left: -100%;
-  }
-
-  h2 {
-    font-size: 20px;
   }
 }
 
@@ -212,10 +210,6 @@ footer img{
   .video{
     width: 450%;
     left: -100%;
-  }
-
-  h2 {
-    font-size: 20px;
   }
 }
 
