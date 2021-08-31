@@ -180,13 +180,13 @@ footer img{
 @media screen and (max-width: 768px) {
 
   h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .header {
     max-width:512px;
-    display:block;
-    margin: 32px auto 48px auto;
+    display: block;
+    margin: 48px auto 48px auto;
     text-align: center;
   }
 
@@ -203,7 +203,7 @@ footer img{
   }
 
   h2 {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
@@ -215,7 +215,7 @@ footer img{
   }
 
   h2 {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
