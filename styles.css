@@ -85,30 +85,32 @@ h2 {
 }
 
 .header {
-  max-width:800px;
+  max-width:768px;
+  display:block;
   margin: 32px auto 48px auto;
   text-align: center;
 }
 
 .logo {
-  width: 80%;
   margin-bottom:16px;
 }
 
+section {
+  overflow:hidden;
+}
 
-.statement {
-  position: absolute;
-  width: 800px;
-  height: 50px;
-  top: 45%;
-  left: 50%;
-  margin-left: -400px; /* margin is -0.5 * dimension */
-  margin-top: -25px;
+section.statement {
+  max-width: 800px;
+  margin:0 auto;
+  text-align: center;
+  padding: 70px 20px;
 }
 
 
-.footer {
-  position: absolute;
+
+
+footer {
+  position: fixed;
   width: 800px;
   height: 50px;
   top: 90%;
@@ -117,11 +119,11 @@ h2 {
   margin-top: -25px;
 }
 
-.footer h2{
+footer h2{
   padding-bottom:8px;
 }
 
-.footer img{
+footer img{
   text-align:center;
   width:40px
 }
@@ -129,36 +131,34 @@ h2 {
 
 
 
-@media screen and (min-width: 0px) and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 
-  h2 {
-    font-size: 32px;
+   h2 {
+    font-size: 18px;
   }
 
   .header {
-    max-width:800px;
-    margin: 24px auto 48px auto;
+    max-width:512px;
+    display:block;
+    margin: 32px auto 48px auto;
     text-align: center;
   }
 
-  .logo {
-    width: 60%;
-    margin-bottom:16px;
-  }
 
 
-  .header .logo {
-    width: 90vw;
-  }
 
-  .statement {
-    padding: 24px;
-  }
+}
 
-  .statement h2{
-    text-align:center;
-    font-size: 2.5vw;
+
+@media screen and (max-width: 375px) {
+   h2 {
+    font-size: 14px;
   }
+}
+
+
+
+
 
 }
 
