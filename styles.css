@@ -127,8 +127,8 @@ section.statement {
 
 
 #mc_embed_signup input.button{
-  background-color:red;
-
+  background: transparent;
+  border:none;
 }
 
 #mc_embed_signup input.email {
@@ -160,6 +160,7 @@ input:focus{
 footer {
   position: fixed;
   bottom: 0;
+  left:0;
   width:100%;
   text-align: center;
   padding: 32px 32px;
@@ -174,10 +175,6 @@ footer img{
   width:30px
 }
 
-.launch img{
-  text-align:center;
-  width:30px
-}
 
 
 @media screen and (max-width: 768px) {
