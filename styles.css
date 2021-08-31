@@ -21,6 +21,12 @@
   pointer-events: none;
 }
 
+.fade {
+  height:100vh;
+  background-color: rgba(120,120,250,0.5);
+  z-index:200;
+}
+
 @media (min-aspect-ratio: 16/9) {
   .video {
     height: 300%;
@@ -54,18 +60,18 @@ body {
 }
 
 /* a:link, a:visited {
-  background-color: #fafafa;
-  color: black;
-  border: 2px solid green;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+background-color: #fafafa;
+color: black;
+border: 2px solid green;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
 }
 
 a:hover, a:active {
-  background-color: green;
-  color: white;
+background-color: green;
+color: white;
 } */
 
 
@@ -96,26 +102,67 @@ h2 {
   margin-bottom:16px;
 }
 
-section {
-  overflow:hidden;
+section div{
+  margin-bottom:32px;
+}
+
+section div.launch{
+  margin-bottom:64px;
 }
 
 section.statement {
   max-width: 800px;
   margin:0 auto;
   text-align: center;
-  padding: 70px 20px;
+  padding: 48px 16px;
 }
+
+
+#mc_embed_signup {
+  /* clear:left; */
+  font-size: 14px ;
+  font-family: 'monotype-grotesque',sans-serif;
+  width:100%;
+}
+
+
+#mc_embed_signup input.button{
+  background-color:red;
+
+}
+
+#mc_embed_signup input.email {
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align:center;
+  color: #fafafa;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #fafafa;
+  width:500px
+}
+
+::placeholder {
+  color: #fafafa;
+  opacity: 1;
+}
+
+input:focus{
+  outline: none;
+}
+
+
 
 
 footer {
   position: fixed;
-  width: 800px;
-  height: 50px;
-  top: 90%;
-  left: 50%;
-  margin-left: -400px; /* margin is -0.5 * dimension */
-  margin-top: -25px;
+  bottom: 0;
+  width:100%;
+  text-align: center;
+  padding: 32px 32px;
 }
 
 footer h2{
@@ -124,15 +171,14 @@ footer h2{
 
 footer img{
   text-align:center;
-  width:38px
+  width:30px
 }
-
 
 
 
 @media screen and (max-width: 768px) {
 
-   h2 {
+  h2 {
     font-size: 18px;
   }
 
@@ -155,7 +201,7 @@ footer img{
     left: -100%;
   }
 
-   h2 {
+  h2 {
     font-size: 14px;
   }
 }
@@ -167,11 +213,11 @@ footer img{
     left: -100%;
   }
 
-   h2 {
+  h2 {
     font-size: 14px;
   }
 }
 
 /* @media screen and (min-width: 1024px) {
-  #photo { display: hidden; }
+#photo { display: hidden; }
 } */
