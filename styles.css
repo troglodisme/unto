@@ -47,7 +47,8 @@ body {
   font-style: normal;
   color: #fafafa;
   margin: 24px;
-  background-color: #467058;
+  /* background-color: #467058; */
+  background-color: #377156;
   overflow: hidden; /* Hide scrollbars */
 
 }
