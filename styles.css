@@ -144,31 +144,32 @@ footer img{
   }
 
 
-
-
 }
 
 
-@media screen and (max-width: 375px) {
+
+
+@media screen and (max-width: 470px) {
+  .video{
+    width: 380%;
+    left: -100%;
+  }
+
    h2 {
     font-size: 14px;
   }
 }
 
 
-
-
-
-}
-
-@media screen and (max-width: 768) {
-
-  body {
-    background-color: #0000ff;
-
-
+@media screen and (max-width: 375px) {
+  .video{
+    width: 450%;
+    left: -100%;
   }
 
+   h2 {
+    font-size: 14px;
+  }
 }
 
 /* @media screen and (min-width: 1024px) {
