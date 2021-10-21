@@ -1,0 +1,914 @@
+/* unto launch v0.1 */
+
+@font-face {
+  font-family: 'Caslon Italian Web';
+  src: url('./fonts/CaslonItalian-Roman-Web.woff2') format('woff2'),
+  url('./fonts/CaslonItalian-Roman-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 150px;
+  margin: -150px 0 0;
+}
+
+
+:root {
+  --green: #477258;  /* PANTONE  349 U */
+  --green2: #467058;  /* From figma */
+  --lightGreen: #d8e10d;
+
+  --orange:#FF6C2F;  /* PANTONE 021U */
+  --bright: #f4f4f4;
+  --dark: #111111;
+  --bordini: 15px;
+  --bordiniMobile: 15px;
+}
+
+body {
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  color: var(--green);
+  background-color: var(--bright);
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1;
+}
+
+h2 {
+  color: var(--green);
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+p {
+  font-size: 2em;
+  line-height: 1;
+}
+
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color:var(--green);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 42px 42px 42px 42px;
+
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  z-index:1000;
+  /* width: 100%; */
+}
+
+nav a {
+  /* background-color: var(--orange);
+  border-radius: var(--bordini);
+  color: var(--bright);
+  decoration: none; */
+}
+
+nav h1{
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 3.5em;
+  color: var(--bright);
+  text-align: center;
+}
+
+#logo{
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  /* transition-delay: 0.1s; */
+}
+
+#menu{
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: var(--orange);
+
+  position:fixed;
+  top: 4.5vh;
+  left: 1em;
+
+  width:54px;
+  height: 54px;
+  border-radius: 50%;
+  opacity:0;
+}
+
+#menu:hover{
+  cursor:pointer;
+}
+
+/* #nav_mission, #nav_shop{
+transition: 2s;
+display:block;
+font-size:5em;
+} */
+
+
+section {
+  margin: 18px auto 18px auto;
+  max-width:1440px;
+  border-radius: var(--bordini);
+  background-size: cover;
+  background-position: center;
+}
+
+section.home {
+  margin: 0;
+  max-width:100vw;
+  border-radius: 0;
+  height: 95vh;
+}
+
+/* section.tagline {
+text-align: center;
+height: 4vh;
+} */
+
+section.title {
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 13em;
+  color: var(--green);
+  text-align: center;
+}
+
+section.slide {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 24px;
+}
+
+section.mission {
+  /* padding-bottom:24px; */
+  background-color: var(--bright);
+  color: var(--green);
+  column-count: 2;
+  column-gap: 48px;
+}
+
+section.about{
+  /* padding-bottom: 24px; */
+  max-height: 60vh;
+  border-radius:0;
+}
+
+.statement{
+  display:flex;
+  justify-content: space-between;
+
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.statement-text{
+  height:100%;
+
+  background-color:var(--light);
+  color: var(--green);
+  width:150%;
+
+  line-height: 1;
+}
+
+.statement-item1{
+  border-radius:var(--bordini);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./img/unto-toscano-about5.jpg');
+
+  width:100%;
+}
+
+.statement-item2{
+  border-radius:var(--bordini);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./img/unto-toscano-about2.jpg');
+
+  width:100%;
+}
+
+
+.statement-text a{
+  color: var(--green);
+  border-bottom: 3px solid transparent;
+}
+
+.statement-text a:hover{
+  border-bottom: 3px solid var(--orange);
+}
+
+.mission-text a{
+  color: var(--green);
+  border-bottom: 3px solid transparent;
+}
+
+.mission-text a:hover{
+  border-bottom: 3px solid var(--orange);
+}
+
+
+.mission-text p{
+  /* font-size: 1.4em; */
+  padding-top: 8px;
+  /* line-height: 1.3; */
+}
+
+.mission-text h2{
+  padding-bottom:4px;
+  font-weight:900;
+}
+
+
+.bottles-text{
+  text-align: center;
+
+}
+
+
+.btn {
+  position:absolute;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 64px;
+  width:300px;
+  font-size:2em;
+  text-align:center;
+  bottom:0;
+  padding-top:14px;
+}
+
+.btn:hover {
+  /* box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1); */
+  cursor: pointer;
+  transform: scale(1.01);
+  transform: translateY(2px);
+}
+
+
+.shop-gallery{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.shop-gallery div{
+  border-radius:var(--bordini);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:45vh;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+}
+
+.gallery-item1{
+  background-image: url('./img/unto_250ml.jpg');
+}
+
+.gallery-item1:hover{
+  background-image: url('./img/unto_250ml_rear.jpg');
+
+}
+
+.gallery-item2{
+  background-image: url('./img/gif1.gif');
+  background-color:var(--green);
+  color: var(--bright);
+  padding:24px;;
+}
+
+.gallery-item3{
+  background-image: url('./img/unto_500ml.jpg');
+}
+
+.gallery-item3:hover{
+  background-image: url('./img/unto_500ml_rear.jpg');
+
+}
+
+
+.gallery-item4{
+  background-image: url('./img/gif3.gif');
+  background-color:var(--green);
+  color: var(--bright);
+  padding:24px;;
+}
+
+
+
+section.shop {
+  overflow: hidden;
+  /* padding-bottom:24px; */
+
+}
+
+.shop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopify-buy-frame--product {
+  width: 250px;
+}
+
+
+.shop img {
+  max-width: 235px;
+}
+
+.product {
+  width: 50%;
+  float: left;
+  text-align: center;
+  /* padding: 50px 20px 40px 20px; */
+}
+
+.shop h2{
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 12em;
+  color: var(--orange);
+}
+
+/* .shop img {
+max-width: 230px;
+} */
+
+.shopify-buy__btn {
+  background-color: var(--green);
+  color: white;
+  max-width: 300px;
+  width:100%;
+  border: none;
+  border-radius: 10px;
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  padding: 12px;
+  margin-left: 10px;
+}
+
+.shopify-buy__btn:hover {
+  /* box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1); */
+  cursor: pointer;
+  transform: scale(1.01);
+  /* transform: translateY(-2px); */
+  background-color: var(--orange);
+
+
+}
+
+
+.shopify-buy__cart{
+  /* background-color:red; */
+}
+
+
+
+.shop-details {
+  display:flex;
+  justify-content: space-between;
+  background-color: var(--green);
+  border-radius: var(--bordini);
+  color: var(--bright);
+  padding:18px;
+  margin-top:8px;
+}
+
+.shop-details p{
+  margin-left: 12px;
+
+}
+
+.shop-banner {
+  background-color: var(--green);
+  border-radius: var(--bordini);
+  color: var(--bright);
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding:18px;
+
+}
+
+
+.shop-banner p{
+  display: inline-block;
+  padding-left: 100%;
+  animation: shop-banner 15s linear infinite;
+}
+
+
+@keyframes shop-banner {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+/*
+.about {
+height:60vh;
+padding:40px;
+background-color: var(--orange);
+color:white;
+} */
+
+
+
+
+
+footer {
+  background-color: var(--green);
+  height:400px;
+  width:100%;
+  padding-top:24px;
+
+}
+
+section.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+.footer p{
+  color: var(--bright);
+  font-size: 1.4em;
+  padding-bottom: 4px;
+}
+
+.footer a{
+  color: var(--bright);
+}
+
+.footer a:hover{
+  border-bottom: 2px solid var(--bright);
+}
+
+.footer h3{
+  color: var(--bright);
+  font-size: 2em;
+  padding-bottom:16px;
+}
+
+.footer_left{
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+}
+
+.contact{
+  width:100%;
+}
+
+.shopping{
+  width:100%;
+}
+
+.footer_right{
+}
+
+#mc_embed_signup{
+  clear:left;
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  width:100%;
+}
+
+#mc_embed_signup .button{
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  border-radius: 10px;
+  border:none;
+  color: var(--bright);
+  background-color: var(--green);
+  cursor: pointer;
+  width:200px;
+  margin-left:8px;
+}
+
+#mc_embed_signup .button:hover{
+  background-color: #FF6C2F;
+}
+
+
+#mc_embed_signup_scroll{
+  display: flex;
+  align-items: flex-end;
+  align-content: space-evenly;
+  overflow:hidden;
+  padding-bottom:12px;
+  padding-top:12px;
+}
+
+#mc_embed_signup input{
+  width:340px;
+  height:40px;
+  border-radius: 10px;
+  border:none;
+  padding-left: 4px;
+
+
+}
+
+#mc_embed_signup input:focus{
+  color: var(--green);
+  padding-left: 4px;
+
+}
+
+#mc_embed_signup input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+
+
+input::placeholder{
+  color:var(--green);
+  font-family: 'monotype-grotesque',sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  /* padding-left: 8px; */
+}
+
+
+#mc_embed_signup form{
+  text-align:left;
+}
+
+
+.social{
+  margin: 0 auto;
+}
+
+
+
+/* SHOPIFY */
+
+/* -- SHOPIFY CART TOGGLE -- */
+
+.shopify-buy__cart-toggle {
+  position:fixed;
+  top: 4.5vh;
+  left: 1em;
+
+  background-color: var(--orange);
+  width:54px;
+  height: 54px;
+  border-radius: 50%;
+  display:none;
+}
+
+.shopify-buy__cart-toggle:hover {
+  /* box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.1);
+  background-color: var(--green); */
+
+}
+
+.shopify-buy__cart-toggle__count{
+  text-align:center;
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 3.5em;
+  color: var(--bright);
+  padding-top:2px;
+  /* visibility:hidden; */
+}
+
+.shopify-buy__cart__header h2{
+  font-size:20px;
+  font-family: 'Caslon Italian Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 3em;
+  color: var(--bright);
+  text-align: left;
+}
+
+.shopify-buy__cart-toggle__count:hover {
+  cursor: pointer;
+}
+
+/* the title should not be displayed as set in the js but it does */
+.shopify-buy--visually-hidden{
+  display:none;
+}
+
+/* doesn't really work because white bar is left at the bottom of the footer*/
+svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
+  display: none;
+}
+
+
+
+/* -- SHOPIFY CART  -- */
+
+.shopify-buy-cart-wrapper{
+  /* background-color:var(--orange)!important; */
+
+}
+
+.shopify-buy__cart-wrapper {
+  height: 100%;
+  padding-left: 10px;
+}
+
+
+.shopify-buy__cart {
+  height: 100%;
+  background-color: #fff;
+  width: calc(100% - 10px);
+  position: absolute;
+  right: 0;
+  -webkit-box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#content-large {display: block;}
+#content-small {display: none;}
+
+
+/* MEDIA */
+
+@media (max-width:1464px) {
+
+  section {
+    margin-left:12px;
+    margin-right:12px;
+  }
+
+  section.title {
+    font-size: 10em;
+  }
+
+
+  footer{
+
+  }
+
+
+  .footer_right{
+
+  }
+
+}
+
+
+/* make shop mobile */
+@media (max-width:1024px){
+  .product{
+    width:100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+    .gallery-item2{
+      display:none;
+    }
+
+    .gallery-item4{
+      display:none;
+    }
+
+    .shop-details {
+      display:flex;
+      justify-content: space-between;
+      background-color: var(--green);
+      border-radius: var(--bordini);
+      color: var(--bright);
+      padding:18px;
+      margin-top:8px;
+    }
+
+    .shop-details p{
+      margin-left: 12px;
+    }
+
+    .shop-details p::nth-child(2){
+      visibility:hidden;
+    }
+
+}
+
+
+
+@media (max-width:992px){
+
+  section.title {
+    font-size: 9em;
+  }
+
+  section.home{
+    height:60vh;
+  }
+  section.slide{
+    height:60vh;
+  }
+
+  .statement-item1{
+    display:none;
+  }
+
+  .statement-item2{
+    display:none;
+  }
+
+
+
+  section.mission {
+    column-count: 1;
+    column-gap: 24px;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+
+
+@media (max-width: 810) {
+
+  section.title {
+    font-size: 8em;
+  }
+
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+
+  header {
+    /* padding: 24px 16px;
+    text-align: left;
+    background-color:var(--green); */
+
+  }
+
+  section{
+    border-radius: var(--bordiniMobile);
+  }
+
+  section.title {
+    font-size: 5em;
+  }
+
+  section.home{
+    height:45vh;
+  }
+
+  section.slide{
+    height:45vh;
+  }
+
+
+
+  h1{
+    font-size: 2em;
+  }
+
+
+
+
+  .about p {
+    line-height: 1.2;
+  }
+
+
+  .shop h2 {
+    font-size: 8em;
+  }
+
+  .shop img {
+    max-width: 150px;
+  }
+
+  .shopify-buy__btn{
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /* .shop div{
+  padding:2px;
+  } */
+
+  /* .hero h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.hero {
+padding-top: 80px;
+padding-bottom: 80px;
+} */
+
+
+/* .shop div {
+float: none;
+width: auto;
+padding: 30px 30px 40px 30px;
+} */
+
+.shop p {
+  display: none;
+}
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 430px) {
+
+
+  #content-large {display: none;}
+  #content-small {display: block;}
+
+
+  section.title {
+    font-size: 3.8em;
+  }
+
+  .statement-item1{
+    display:none;
+  }
+
+  .statement-item2{
+    display:none;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  /* footer {
+  padding: 30px 20px;
+  } */
+
+  .shop h2 {
+    font-size: 6.5em;
+  }
+
+}
+
+/* @media (min-width: 600px) {
+.shop {
+display: flex;
+flex-wrap: wrap;
+}
+} */
