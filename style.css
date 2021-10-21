@@ -205,7 +205,7 @@ section.about{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('./img/unto-toscano-about5.jpg');
+  background-image: url('./img/unto-toscano-statement1.jpg');
 
   width:100%;
 }
@@ -215,7 +215,7 @@ section.about{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('./img/unto-toscano-about2.jpg');
+  background-image: url('./img/unto-toscano-statement2.jpg');
 
   width:100%;
 }
@@ -312,7 +312,7 @@ section.about{
 }
 
 .gallery-item2{
-  background-image: url('./img/gif1.gif');
+  background-image: url('./img/unto-toscano-clip1.gif');
   background-color:var(--green);
   color: var(--bright);
   padding:24px;;
@@ -329,7 +329,7 @@ section.about{
 
 
 .gallery-item4{
-  background-image: url('./img/gif3.gif');
+  background-image: url('./img/unto-toscano-clip2.gif');
   background-color:var(--green);
   color: var(--bright);
   padding:24px;;
