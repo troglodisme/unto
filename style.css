@@ -462,21 +462,11 @@ color:white;
 
 footer {
   background-color: var(--green);
-  height:400px;
+  height:300px;
   width:100%;
   padding-top:24px;
-
 }
 
-section.footer{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items:flex-start;
-
-  /* padding-left: 10px;
-  padding-right: 10px; */
-}
 
 .footer p{
   color: var(--bright);
@@ -512,8 +502,10 @@ section.footer{
   width:100%;
 }
 
-.footer_right{
+.newsletter{
+  width:100%;
 }
+
 
 #mc_embed_signup{
   clear:left;
@@ -685,14 +677,6 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
   }
 
 
-  footer{
-
-  }
-
-
-  .footer_right{
-
-  }
 
 }
 
@@ -735,6 +719,11 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
       display: block;
     }
 
+    section.footer {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
 
 }
 
@@ -743,7 +732,7 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
 @media (max-width:992px){
 
   section.title {
-    font-size: 9em;
+    font-size: 6em;
   }
 
   section.home{
@@ -761,8 +750,6 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
     display:none;
   }
 
-
-
   section.mission {
     column-count: 1;
     column-gap: 24px;
@@ -771,6 +758,16 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
   p {
     font-size: 1.5em;
   }
+
+  .footer p{
+    color: var(--bright);
+    font-size: 1.2em;
+    padding-bottom: 4px;
+  }
+
+
+
+
 }
 
 
@@ -886,9 +883,7 @@ padding: 30px 30px 40px 30px;
     font-size: 1.5em;
   }
 
-  /* footer {
-  padding: 30px 20px;
-  } */
+
 
   .shop h2 {
     font-size: 6.5em;
