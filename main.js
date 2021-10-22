@@ -5,12 +5,11 @@ if (window.innerWidth > 600) {
   window.onscroll = function() {
   scrollAction();
   scrollActionMenu();
-  console.log('desktop');
   }
 } else if (window.innerWidth < 599){
   window.onscroll = function() {
   scrollActionMobile();
-  console.log('mobile');
+  hideMenu();
   }
 }
 
@@ -52,17 +51,12 @@ function scrollActionMenu() {
   }
 }
 
-function scrollActionMobile() {
+function hideMenu() {
   var logo = document.getElementById("menu");
 
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    menu.style.opacity = 1;
-
-  } else {
-    menu.style.opacity = 0;
-
-  }
+  menu.style.visibility = hidden;
 }
+
 
 
 function popCart() {
