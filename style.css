@@ -507,6 +507,7 @@ footer {
 }
 
 
+
 #mc_embed_signup{
   clear:left;
   font-family: 'monotype-grotesque',sans-serif;
@@ -567,6 +568,10 @@ input::placeholder{
   text-align:left;
 }
 
+
+.clear {
+    padding-left:12px;
+}
 
 .social{
   margin: 0 auto;
