@@ -44,6 +44,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.hide{
+  display: none;
+}
+
 h1 {
   font-size: 4em;
   line-height: 1;
@@ -473,7 +477,7 @@ color:white;
 
 footer {
   background-color: var(--green);
-  height:300px;
+  height:400px;
   width:100%;
   padding-top:24px;
   position:relative;
@@ -483,7 +487,7 @@ footer {
 .footer p{
   color: var(--bright);
   font-size: 1.4em;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 .footer a{
@@ -505,6 +509,11 @@ footer {
   display:flex;
   align-items:flex-start;
 }
+
+.footer_right{
+  width:20%;
+}
+
 
 .contact{
   width:100%;
@@ -528,6 +537,10 @@ footer {
   width:100%;
 }
 
+#mc_embed_signup form{
+  text-align:center;
+}
+
 #mc_embed_signup .button{
   font-family: 'monotype-grotesque',sans-serif;
   font-weight: 700;
@@ -539,6 +552,7 @@ footer {
   cursor: pointer;
   max-width:200px;
   padding:12px;
+  margin-top:8px;
 }
 
 #mc_embed_signup .button:hover{
@@ -546,21 +560,22 @@ footer {
 }
 
 
-#mc_embed_signup_scroll{
-  display: flex;
-}
 
 #mc_embed_signup input{
-  max-width:340px;
+  max-width:300px;
   height:40px;
   border-radius: 10px;
   border:none;
   padding-left: 4px;
+  width:100%;
+  text-align:center;
+
 }
 
 #mc_embed_signup input:focus{
   color: var(--green);
   padding-left: 4px;
+  text-align:center;
 }
 
 #mc_embed_signup input:focus, textarea:focus, select:focus{
@@ -576,14 +591,7 @@ input::placeholder{
 }
 
 
-#mc_embed_signup form{
-  text-align:left;
-}
 
-
-.clear {
-    padding-left:12px;
-}
 
 .social{
   position:absolute;
