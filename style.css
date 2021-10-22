@@ -408,7 +408,6 @@ max-width: 230px;
 }
 
 
-
 .shop-details {
   display:flex;
   justify-content: space-between;
@@ -421,8 +420,9 @@ max-width: 230px;
 
 .shop-details p{
   margin-left: 12px;
-
 }
+
+
 
 .shop-banner {
   background-color: var(--green);
@@ -439,7 +439,7 @@ max-width: 230px;
 .shop-banner p{
   display: inline-block;
   padding-left: 100%;
-  animation: shop-banner 15s linear infinite;
+  animation: shop-banner 18s linear infinite;
 }
 
 
@@ -660,6 +660,7 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
 
 
 #content-large {display: block;}
+#content-medium {display: none;}
 #content-small {display: none;}
 
 
@@ -675,8 +676,6 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
   section.title {
     font-size: 10em;
   }
-
-
 
 }
 
@@ -711,6 +710,17 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
       margin-left: 12px;
     }
 
+    .detail-item-small{
+      text-align:center;
+      background-color: var(--green);
+      border-radius: var(--bordini);
+      color: var(--bright);
+      padding:18px;
+      margin-top:8px;
+
+    }
+
+
     #mc_embed_signup .button{
       padding:0px;
     }
@@ -728,8 +738,11 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
 }
 
 
-
 @media (max-width:992px){
+
+  #content-large {display: none;}
+  #content-medium {display: block;}
+  #content-small {display: block;}
 
   section.title {
     font-size: 6em;
@@ -864,6 +877,7 @@ padding: 30px 30px 40px 30px;
 
 
   #content-large {display: none;}
+  #content-medium {display: block;}
   #content-small {display: block;}
 
 
