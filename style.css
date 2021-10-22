@@ -61,7 +61,7 @@ h2 {
 
 p {
   font-size: 2em;
-  line-height: 1;
+  line-height: 1.06
 }
 
 
@@ -212,7 +212,7 @@ section.about{
   color: var(--green);
   width:150%;
 
-  line-height: 1.1;
+line-height: 1.06
 }
 
 .statement-item1{
@@ -255,12 +255,12 @@ section.about{
 }
 
 .statement-text p{
-  padding-top: 14px;
+  padding-top: 12px;
 }
 
 .mission-text p{
-  padding-top: 14px;
-  line-height: 1.1;
+  padding-top: 12px;
+  line-height: 1.06
 
 }
 
@@ -871,7 +871,7 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
   }
 
   .about p {
-    line-height: 1.2;
+    line-height: 1.06;
   }
 
 
