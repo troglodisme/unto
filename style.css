@@ -260,8 +260,7 @@ line-height: 1.06
 
 .mission-text p{
   padding-top: 12px;
-  line-height: 1.06
-
+  line-height: 1.06;
 }
 
 .mission-text h2{
@@ -269,12 +268,9 @@ line-height: 1.06
   font-weight:900;
 }
 
-
 .bottles-text{
   text-align: center;
-
 }
-
 
 .btn {
   position:absolute;
