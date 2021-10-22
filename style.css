@@ -61,7 +61,7 @@ h2 {
 
 p {
   font-size: 2em;
-  line-height: 1.06
+  line-height: 1.06;
 }
 
 
@@ -212,7 +212,7 @@ section.about{
   color: var(--green);
   width:150%;
 
-line-height: 1.06
+  line-height: 1.06;
 }
 
 .statement-item1{
@@ -811,7 +811,6 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
   .footer p{
     color: var(--bright);
     font-size: 1.2em;
-    padding-bottom: 4px;
   }
 
   .footer_right{
