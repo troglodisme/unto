@@ -526,14 +526,14 @@ section.footer{
 #mc_embed_signup .button{
   font-family: 'monotype-grotesque',sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.4em;
   border-radius: 10px;
   border:none;
   color: var(--bright);
   background-color: var(--green);
   cursor: pointer;
-  width:200px;
-  margin-left:8px;
+  max-width:200px;
+  padding:12px;
 }
 
 #mc_embed_signup .button:hover{
@@ -543,27 +543,19 @@ section.footer{
 
 #mc_embed_signup_scroll{
   display: flex;
-  align-items: flex-end;
-  align-content: space-evenly;
-  overflow:hidden;
-  padding-bottom:12px;
-  padding-top:12px;
 }
 
 #mc_embed_signup input{
-  width:340px;
+  max-width:340px;
   height:40px;
   border-radius: 10px;
   border:none;
   padding-left: 4px;
-
-
 }
 
 #mc_embed_signup input:focus{
   color: var(--green);
   padding-left: 4px;
-
 }
 
 #mc_embed_signup input:focus, textarea:focus, select:focus{
@@ -571,13 +563,11 @@ section.footer{
 }
 
 
-
 input::placeholder{
   color:var(--green);
   font-family: 'monotype-grotesque',sans-serif;
   font-weight: 700;
   font-size: 1.4em;
-  /* padding-left: 8px; */
 }
 
 
@@ -737,9 +727,14 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
       margin-left: 12px;
     }
 
-    .shop-details p::nth-child(2){
-      visibility:hidden;
+    #mc_embed_signup .button{
+      padding:0px;
     }
+
+    #mc_embed_signup_scroll{
+      display: block;
+    }
+
 
 }
 
@@ -816,14 +811,9 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
     height:45vh;
   }
 
-
-
   h1{
     font-size: 2em;
   }
-
-
-
 
   .about p {
     line-height: 1.2;
