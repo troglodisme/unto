@@ -471,7 +471,7 @@ footer {
 .footer p{
   color: var(--bright);
   font-size: 1.4em;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .footer a{
