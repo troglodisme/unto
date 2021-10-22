@@ -16,7 +16,7 @@ function scrollAction() {
   // var logo = document.getElementById("menu");
 
   if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
-    logo.style.width = '12%';
+    logo.style.width = '11%';
     // menu.style.opacity = 1;
 
   } else {
