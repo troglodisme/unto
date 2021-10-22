@@ -5,10 +5,12 @@ if (window.innerWidth > 600) {
   window.onscroll = function() {
   scrollAction();
   scrollActionMenu();
+  console.log('desktop');
   }
 } else if (window.innerWidth < 599){
   window.onscroll = function() {
   scrollActionMobile();
+  console.log('mobile');
   }
 }
 
