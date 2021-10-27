@@ -846,6 +846,19 @@ svg.shopify-buy__icon-cart.shopify-buy__icon-cart--side {
 
   }
 
+.product-nav{
+  background-color: var(--orange);
+  height: 100px;
+  width:100%;
+  text-align: center;
+  padding-top:10px;
+}
+
+#home{
+  color:var(--bright);
+}
+
+
   section{
     border-radius: var(--bordiniMobile);
   }
