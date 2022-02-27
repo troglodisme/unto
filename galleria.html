@@ -7,8 +7,11 @@
 <body style="margin : 0px; overflow: hidden;">
   <a-scene embedded arjs>
     <a-marker type="pattern" url='https://raw.githubusercontent.com/troglodisme/unto/master/assets/wharfmarker.patt'>
-      <a-box position="0 0 0" rotation="0 45 0" color="#4CC3D9"></a-box>
-      
+
+      <a-box scale="0.5 0.5 0.5" position="0 0 0" rotation="0 45 0" color="#0000ff"
+          animation__rotate = "property: rotation; dur: 8000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
+      </a-box>
+
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
