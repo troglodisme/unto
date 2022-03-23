@@ -9,6 +9,17 @@
   font-stretch: normal;
 }
 
+
+#demo {
+  display: none;
+}
+
+#demo.visible {
+  display: block;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
